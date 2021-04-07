@@ -1,0 +1,34 @@
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+@import './partial/config';
+@import './partial//home';
+@import './partial/project';
+@import './partial/about';
+@import './partial/blog';
+@import './partial/responsive';
+
+// global reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// global style
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

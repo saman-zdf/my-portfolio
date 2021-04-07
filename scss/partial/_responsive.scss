@@ -1,0 +1,49 @@
+@media (min-width: 800px) {
+  .header {
+    .content {
+      @include flex-s-between;
+      padding-top: 3rem;
+    }
+    .logo {
+      background: $dark-blue;
+      padding: 2rem;
+      border-radius: 20px;
+      border-bottom-right-radius: 0;
+    }
+    .navbar {
+      transform: translateY(0);
+      width: 400px;
+      min-height: 0;
+      background: none;
+      &-items {
+        display: flex;
+      }
+      &-item {
+        margin-left: 1rem;
+      }
+    }
+    .menu {
+      display: none;
+    }
+  }
+  .hero {
+    &-photo {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
+    &-title {
+      font-size: 2.4rem;
+    }
+    &-content {
+      @include flex-s-between;
+    }
+    .box {
+      max-width: 100px;
+      max-height: 100px;
+    }
+    .boxes {
+      max-width: 600px;
+    }
+  }
+}

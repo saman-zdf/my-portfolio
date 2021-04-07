@@ -1,0 +1,40 @@
+// colors
+$white: #ffffff;
+$dark-magneta-clr: #052658;
+$magneta: #914ebf;
+$medium-magneta: #7b8cfb;
+$light-magneta: #acc2fa;
+$light-grayish-magneta: #e1e1f4;
+$Pink: #f45fc5;
+$darker-Pink: #c253ed;
+$dark-blue: #1032a7;
+$medium-blue: #157dce;
+$light-blue: #24c1f2;
+// font family
+$ff-primary: 'Roboto Mono', monospace;
+// others
+$transition-fast: all 350ms ease-in-out;
+$transition-slow: all 500ms linear;
+$spacing: 0.2rem;
+
+// mixin
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-s-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-s-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@mixin flex-s-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
