@@ -1,0 +1,99 @@
+.project {
+  margin: 4rem;
+  .card {
+    max-width: 350px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid $light-grayish-magneta;
+    &-title {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+    &-text {
+      max-width: 250px;
+      margin: 0 auto 1rem;
+
+      padding: 2rem;
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background: $dark-blue;
+      color: $light-grayish-magneta;
+      opacity: 0;
+      transition: $transition-fast;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.card-1 {
+  background: url('../../new-img/intro.img.jpg') center/contain no-repeat;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 30px 30px $light-grayish-magneta;
+  margin: 2rem auto;
+}
+.card-2 {
+  background: url('../../new-img/showcase.jpg') center/cover no-repeat;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px $light-grayish-magneta;
+  margin: 2rem auto;
+}
+
+.card-3 {
+  background: url('../../new-img/showcase-2.jpg') center/cover no-repeat;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  box-shadow: 30px 30px 30px $light-grayish-magneta;
+  margin: 2rem auto;
+}
+// title
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+.bottom-line {
+  width: 100px;
+  height: 8px;
+  border-radius: 80px;
+  background-color: $magneta;
+  margin: 0.5rem auto;
+}
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  color: $white;
+  border: none;
+  border-radius: 20px;
+  background: $dark-magneta-clr;
+  transition: $transition-fast;
+  &:hover {
+    background: $white;
+    color: $dark-magneta-clr;
+  }
+}
+// tools section
+.tools {
+  .tool {
+    font-size: 7rem;
+    &:first-child {
+      color: red;
+    }
+    &:nth-child(2) {
+      color: $dark-blue;
+    }
+    &:last-child {
+      color: $Pink;
+    }
+    text-align: center;
+  }
+}
