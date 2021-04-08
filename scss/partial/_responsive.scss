@@ -46,4 +46,24 @@
       max-width: 600px;
     }
   }
+  // project
+  .project {
+    margin-top: 3rem;
+    height: 80vh;
+    &-content {
+      @include flex-center;
+    }
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    margin: 0 1rem;
+    flex: 0.3;
+  }
+  // tools
+  .tools {
+    &-content {
+      @include flex-s-around;
+    }
+  }
 }
