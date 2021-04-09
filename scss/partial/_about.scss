@@ -1,0 +1,115 @@
+.about {
+  margin-top: 5rem;
+  padding: 1rem;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $dark-magneta-clr;
+  }
+  &-info {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 200px;
+      width: 300px;
+      height: 300px;
+      z-index: -1;
+      opacity: 0.1;
+      background: $magneta;
+      border-radius: 50%;
+      box-shadow: 0px 20px 20px $magneta;
+    }
+  }
+  &-sup {
+    font-size: 2rem;
+  }
+  &-text {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    max-width: 500px;
+  }
+  &-photo {
+    display: block;
+    width: 100%;
+  }
+}
+// contact section
+.contact {
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-details {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  &-sup {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: $dark-blue;
+  }
+  &-text {
+    font-size: 1.2rem;
+    color: $magneta;
+    margin: 1rem 0;
+  }
+  i {
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  // form
+  .form-group {
+    max-width: 500px;
+    border: 3px solid $light-grayish-magneta;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 2rem;
+  }
+  &-title {
+    text-align: center;
+    color: $dark-blue;
+    font-size: 1.5rem;
+  }
+  .label {
+    display: block;
+    font-size: 1.3rem;
+    color: $dark-blue;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    outline: green;
+    border-radius: 10px;
+    border: 2px solid $light-grayish-magneta;
+  }
+  &-message {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid $light-grayish-magneta;
+  }
+  &-btn {
+    display: inline-block;
+    margin: 3rem auto 2rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    color: $white;
+    background: $dark-blue;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: $transition-fast;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
