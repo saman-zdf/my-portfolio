@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
 .header {
-  background: #914ebf;
+  background: #49166a;
   height: 120px;
   position: relative;
 }
@@ -473,7 +473,7 @@
   width: 100px;
   height: 8px;
   border-radius: 80px;
-  background-color: #914ebf;
+  background-color: #49166a;
   margin: 0.5rem auto;
 }
 
@@ -509,6 +509,153 @@
 
 .tools .tool:last-child {
   color: #f45fc5;
+}
+
+.about {
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #052658;
+}
+
+.about-info:after {
+  content: '';
+  position: absolute;
+  top: 200px;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  opacity: 0.1;
+  background: #49166a;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 20px 20px #49166a;
+          box-shadow: 0px 20px 20px #49166a;
+}
+
+.about-sup {
+  font-size: 2rem;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  max-width: 500px;
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+}
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-details {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-sup {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  color: #1032a7;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  color: #49166a;
+  margin: 1rem 0;
+}
+
+.contact i {
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.contact .form-group {
+  max-width: 500px;
+  border: 3px solid #e1e1f4;
+  border-radius: 10px;
+  padding: 3rem;
+  margin: 2rem;
+}
+
+.contact-title {
+  text-align: center;
+  color: #1032a7;
+  font-size: 1.5rem;
+}
+
+.contact .label {
+  display: block;
+  font-size: 1.3rem;
+  color: #1032a7;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.contact .input {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  outline: green;
+  border-radius: 10px;
+  border: 2px solid #e1e1f4;
+}
+
+.contact-message {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid #e1e1f4;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin: 3rem auto 2rem;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  color: #ffffff;
+  background: #1032a7;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  opacity: 0.8;
 }
 
 @media (min-width: 800px) {
@@ -606,6 +753,37 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .about-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 2rem 0;
+  }
+  .about-img-container:before {
+    content: '';
+    width: 400px;
+    height: 400px;
+    background-color: #c253ed;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    top: 150px;
+    right: 0;
+    opacity: 0.2;
+    -webkit-box-shadow: 0 20px 20px #f45fc5;
+            box-shadow: 0 20px 20px #f45fc5;
+  }
+  .contact-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
